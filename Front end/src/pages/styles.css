@@ -1,0 +1,79 @@
+/* Table Container */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+  
+  /* Table Layout */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* ✅ Ensures columns take equal space */
+  }
+  
+  /* Table Headers & Cells */
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center; /* ✅ Centers text */
+    word-wrap: break-word; /* ✅ Breaks long words */
+    overflow-wrap: break-word; /* ✅ Prevents overflow */
+    white-space: normal; /* ✅ Allows wrapping */
+  }
+  
+  /* Table Headers */
+  th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-align: center; /* ✅ Centers header text */
+  }
+  
+  /* Multi-line headers for selected columns */
+  th.center-header {
+    text-align: center;
+    white-space: pre-line; /* ✅ Allows multi-line text */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    th, td {
+      font-size: 14px; /* ✅ Reduces font size for small screens */
+      padding: 6px;
+    }
+  }
+  
+  /* Edit Icons Container */
+  .edit-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  
+  /* Icons Styling */
+  .icon {
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #333;
+    padding-right: 2%; /* ✅ Ensures spacing */
+  }
+  
+  /* Check & Cancel Icons */
+  .check-icon {
+    color: green;
+  }
+  
+  .cancel-icon {
+    color: red;
+  }
+  
+  /* Editable Input Fields */
+  table input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    text-align: center; /* ✅ Centers input text */
+  }
+  
